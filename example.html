@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Value js component</title>
+    <style>
+        html {font-size: 1em; font-family: sans-serif;}
+        body {padding: 3em;}
+        * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+    </style>
+</head>
+<body>
+
+    <h1>Value js component</h1>
+    
+    <form>
+        <input type="text" id="input_name" name="page[title]" class="js-input-01-get" value="Duplicated value">
+        <span id="input_value"></span>
+    </form>
+
+
+    <script src="build/build.js"></script>
+    <script>
+        var value = require('value');
+        var input = value.get('#input_name');
+        value.set('#input_value', input);
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
   "name": "value",
   "repo": "chameleonui/value",
   "description": "Get/set value from element to element/elements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [],
   "dependencies": {},
   "development": {},

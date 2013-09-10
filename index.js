@@ -1,24 +1,12 @@
 /**
  * Set or get value form element or to element/elements
- *
- * @param {Element} el
- * @param {Mixed} val
- * @return {Mixed}
- * @api public
  */
-
-function Value() {
-  // if (2 == arguments.length) return this.set(el, val);
-  // if (1 == arguments.length) return this.get(el);
-};
-
-module.exports = Value;
 
 /**
  * Get value/inner html from `el`.
  */
 
-Value.prototype.get = function(el) {
+exports.get = function(el) {
     var element = document.querySelector(el),
         content;
 
@@ -37,7 +25,7 @@ Value.prototype.get = function(el) {
  * Set `el` a new `val`.
  */
 
-Value.prototype.set = function(el, val) {
+exports.set = function(el, val) {
     var elements = document.querySelectorAll(el),
         i;
 

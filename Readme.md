@@ -10,12 +10,15 @@ Install with [component(1)](http://component.io):
 $ component install chameleonui/value
 ```
 
-## API
+## Example
 
 ```js
-var Value = require('chameleonui-value');
-var input = new Value();
+var value = require('value');
+var input = value.get('#source');
+value.set('#target', input);
 ```
+
+## API
 
 ### Value.get(el)
 Get value or inner html from specified element
